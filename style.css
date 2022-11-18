@@ -197,15 +197,18 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+.skill-img{
+    height: 150px;
+}
 .card{
     background-color: #fff;
-    width: 21.25em;
+    width: 17.50em;
     box-shadow: 0 5px 25px rgba(1 1 1 /15%);
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
     transition: 0.7s ease;
+    text-align: center;
 }
 
 .card:hover{
@@ -259,7 +262,10 @@ section{
 }
 
 .project-image img{
+    object-fit:cover;
     width: 100%;
+    height: 200px;
+    object-position: center;
 }
 .project-image {
     width: 100%;
@@ -284,13 +290,23 @@ section{
     margin-top: 10px;
 }
 
-.more-details{
+.more-details, .contact-btn{
     text-decoration: none;
     color: #0d8c8d;
     font-weight: 500;
     font-size: 0.9em;
+    transition: 0.3s;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.6rem 0.4rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
 }
-
+.more-details:hover, .contact-btn:hover{
+    color: var(--primary-color);
+    background-color: white;
+    border-color: var(--primary-color);
+}
 .contact .icon{
   font-size: 4.5em;  
 }
@@ -302,6 +318,11 @@ section{
 .contact .info p{
     font-size: 1.5em;
 }
+.contact-btn a{
+  text-decoration: none;
+  color: inherit;
+}
+
 
 .footer{
     background-color: #070707;
