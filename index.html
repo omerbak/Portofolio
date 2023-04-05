@@ -4,34 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="">
+    <meta name="description" content="this is the personal portfolio website of Omer Baktheer where I inculde iformation about me, my skills, my projects and my contact info">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
     <script src="./script.js" defer></script>
     <title>Omer Baktheer</title>
 </head>
 <body>
-    
-    <header>
-        <a href="#" class="logo">Omer Baktheer</a>
-        <nav class="navigation">
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button class="sidebar-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
-    </header>
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <div class="sidebar-header">
-          <button class="close-btn"><i class="fas fa-times"></i></button>
+    <div class="social-icons">
+        <a href="https://github.com/omerbak?tab=repositories"><i class="fi-xnsuxl-github"></i></a>
+        <a href="#"><i class="fi-cnsuxl-linkedin"></i></a>
+        <a href="#"><i class="fi-cnsuxl-twitter-solid"></i></a>
+    </div>
+    <!-- <header>
+        <div class="container">
+            <a href="#" class="logo">Omer Baktheer</a>
+            <nav class="navigation">
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
+    </header> -->
+    <!-- Sidebar -->
+    <div class="sidebar-title">
+        <button class="sidebar-toggle">
+           <span class="span-one"></span>
+           <span class="span-one"></span>
+           <span class="span-one"></span>
+        </button>
+        <h1>Omer Baktheer</h1>
+    </div>
+    <aside class="sidebar">
         <!-- links -->
         <ul class="links">
           <li>
             <a href="#main">Home</a>
+            <i class="fa-brands fa-twitter"></i>
           </li>
           <li>
             <a href="#skills">Skills</a>
@@ -43,86 +55,57 @@
             <a href="#contact">Contact Me</a>
           </li>
         </ul>
-        <!-- social media -->
-       <!--  <ul class="social-icons">
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-behance"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-sketch"></i>
-            </a>
-          </li>
-        </ul> -->
       </aside>
-
     <!-- end Sidebar -->
+
     <section class="main" id="main">
-        <div>
+        <div class="container">
             <h2>Hello I'm Omer<br><span>Web Developper</span></h2>
             <h3>I'm passionate about web and creating great websites</h3>
-            <a href="#projects" class="main-btn">View my work</a>
-            <div class="social-icons">
-                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-    
-                <a href="https://github.com/omerbak?tab=repositories" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-            </div>
+                <a href="#projects" class="main-btn">
+                   <p>View my work</p>
+                   <i class="fi-xnldxl-chevron arrow-icon"></i>
+                </a>
         </div>
     </section>
 
     <section class="cards skills" id="skills">
-        <h2 class="title">Skills</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon"><img class="skill-img" src="./images/html5.svg" alt="html"></div>
-                <div class="info">
-                    <h3>Html</h3>
+        <div class="container">
+
+            <h2 class="title">Skills</h2>
+            <div class="skills-content">
+                <div class="skill-card">
+                    <div class="icon"><img class="skill-img" src="./images/html5.svg" alt="html"></div>
+                    <div class="skill-info">
+                        <h3>Html</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="icon"><img class="skill-img" src="./images/css3.svg" alt="css"></div>
-                <div class="info">
-                    <h3>Css</h3>
-            
+                <div class="skill-card">
+                    <div class="icon"><img class="skill-img" src="./images/css3.svg" alt="css"></div>
+                    <div class="skill-info">
+                        <h3>Css</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="icon"><img class="skill-img" src="./images/javascript.svg"></div>
-                <div class="info">
-                    <h3>Javascript</h3>
+                <div class="skill-card">
+                    <div class="icon"><img class="skill-img" src="./images/javascript.svg"></div>
+                    <div class="skill-info">
+                        <h3>Javascript</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="icon"><img class="skill-img" src="./images/git-icon.svg"></div>
-                <div class="info">
-                    <h3>Git</h3>
+                <div class="skill-card">
+                    <div class="icon"><img class="skill-img" src="./images/git-icon.svg"></div>
+                    <div class="skill-info">
+                        <h3>Git And Github</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="icon"><img class="skill-img" src="./images/reactjs.png" alt="React"></div>
-                <div class="info">
-                    <h3>React</h3>
+                <div class="skill-card">
+                    <div class="icon"><img class="skill-img" src="./images/reactjs.png" alt="React"></div>
+                    <div class="skill-info">
+                        <h3>React</h3>
+                    </div>
                 </div>
+               
             </div>
-           
         </div>
     </section>
 
@@ -151,125 +134,121 @@
     </section> -->
 
     <section class="projects" id="projects">
-        <h2 class="title">Projects</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./images/projects/toDo.PNG" alt="">
+        <div class="container">
+            <h2 class="title">Projects</h2>
+            <div class="projects-content">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/projects/toDo.PNG" alt="">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Html, Css, Js</p>
+                        <strong class="project-title">
+                            <span>To Do App</span>
+                            <a href="https://omerbak.github.io/To_do_app/" target="_blank" class="more-details">See Live</a>
+                        </strong>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">Html, Css, Js</p>
-                    <strong class="project-title">
-                        <span>To Do App</span>
-                        <a href="https://omerbak.github.io/To_do_app/" target="_blank" class="more-details">See Live</a>
-                    </strong>
+    
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/projects/meals.PNG" alt="">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">ReactJs, Api</p>
+                        <strong class="project-title">
+                            <span>Meals App</span>
+                            <a href="https://mealsapp.obak.repl.co/?" target="_blank" class="more-details">See Live</a>
+                        </strong>
+                    </div>
                 </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./images/projects/meals.PNG" alt="">
+    
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/projects/fetchGithub.PNG" alt="">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Html, Css, js, Api</p>
+                        <strong class="project-title">
+                            <span>Fetch Github Repos</span>
+                            <a href="https://omerbak.github.io/Fetch_github_user/" target="_blank" class="more-details">See Live</a>
+                        </strong>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">ReactJs, Api</p>
-                    <strong class="project-title">
-                        <span>Meals App</span>
-                        <a href="https://mealsapp.obak.repl.co/?" target="_blank" class="more-details">See Live</a>
-                    </strong>
+    
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/projects/localBusiness.PNG" alt="">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Html, Css</p>
+                        <strong class="project-title">
+                            <span>local busniess</span>
+                            <a href="https://omerbak.github.io/MetaCourseProject_luckyShrup/" target="_blank" class="more-details">See Live</a>
+                        </strong>
+                    </div>
                 </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./images/projects/fetchGithub.PNG" alt="">
+    
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/projects/typingDash.PNG" alt="">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Html, Css, Js</p>
+                        <strong class="project-title">
+                            <span>Typing Game</span>
+                            <a href="https://omerbak.github.io/Typing_Dash/" target="_blank" class="more-details">See Live</a>
+                        </strong>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">Html, Css, js, Api</p>
-                    <strong class="project-title">
-                        <span>Fetch Github Repos</span>
-                        <a href="https://omerbak.github.io/Fetch_github_user/" target="_blank" class="more-details">See Live</a>
-                    </strong>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./images/projects/localBusiness.PNG" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Html, Css</p>
-                    <strong class="project-title">
-                        <span>local busniess</span>
-                        <a href="https://omerbak.github.io/MetaCourseProject_luckyShrup/" target="_blank" class="more-details">See Live</a>
-                    </strong>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./images/projects/typingDash.PNG" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Html, Css, Js</p>
-                    <strong class="project-title">
-                        <span>Typing Game</span>
-                        <a href="https://omerbak.github.io/Typing_Dash/" target="_blank" class="more-details">See Live</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./images/projects/Calculator.PNG" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Html, Css, Js</p>
-                    <strong class="project-title">
-                        <span>Calculator</span>
-                        <a href="https://omerbak.github.io/simple_calculator/" target="_blank" class="more-details">See Live</a>
-                    </strong>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/projects/Calculator.PNG" alt="">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Html, Css, Js</p>
+                        <strong class="project-title">
+                            <span>Calculator</span>
+                            <a href="https://omerbak.github.io/simple_calculator/" target="_blank" class="more-details">See Live</a>
+                        </strong>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cards contact" id="contact">
+    <section class="contact" id="contact">
         <h2 class="title">Contact Me</h2>
-        <div class="content">
-            <!-- <div class="card">
-                <div class="icon"><i class="fa-solid fa-square-phone-flip"></i></div>
-                <div class="info">
-                    <h3>Phone</h3>
-                    <p>77561235</p>
-                </div>
-            </div> -->
-
-            <div class="card">
-                <div class="icon"><i class="fa-regular fa-envelope"></i></div>
-                <div class="info">
-                    <h3>Email</h3>
-                </div>
-                <button class="contact-btn"><a href="mailto:omerbaktheer77@gmail.com" target="_blank">Message Me</a></button>
+        <div class="container">
+            <div class="content">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e74a0c89-c1d7-41ee-ba87-dfc3b0c29dba">
+                    <div class="form-container">
+                        <div class="form-field name-field">
+                            <input name="name" type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-field email-field">
+                            <input name="email" type="text" placeholder="Email" required>
+                        </div>
+                        <div class="form-field message-field">
+                            <textarea name="message" class="form-textarea" placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+                    <button class="submit-button">Submit</button>
+                </form>
             </div>
-            <div class="card">
-                <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
-                <div class="info">
-                    <h3>Whatsapp</h3>
-                </div>
-                <button class="contact-btn"><a href="https://wa.me/+33768630499" target="_blank">Message Me</a></button>
-            </div>
-
-
         </div>
     </section>
 
     <footer class="footer">
-        <p class="footer-title">Copyrights &copy; <span>Omer Baktheer</span></p>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-            <a href="https://github.com/omerbak?tab=repositories" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+        <div class="container">
+            <p class="footer-title">&copy; All Rights Reserved | <span>Omer Baktheer</span></p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://github.com/omerbak?tab=repositories" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+            </div>
         </div>
-
     </footer>
 </body>
 </html>
