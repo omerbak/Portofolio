@@ -15,6 +15,16 @@ toggleBtn.addEventListener("click", function () {
   console.log("toggle-clicked")
   sidebar.classList.toggle("show-sidebar");
   body.classList.toggle("show-sidebar")
+  socialIconsAnime = anime({
+    targets: ".links li",
+    translateX: [-500, 0],
+    duration: 200,
+    delay: function(el, i, l){
+      return (i+1) * 300;
+    },
+    endDelay: 100,
+    easing: "easeInOutElastic",
+  })
 });
 
 links.forEach((link) => {
@@ -25,3 +35,24 @@ links.forEach((link) => {
     body.classList.toggle("show-sidebar")
   })
 })
+
+
+socialIconsAnime = anime({
+  targets: ".social-icons a",
+  translateY: [-1000, 0],
+  duration: 500,
+  delay: function(el, i, l){
+    return i * 500;
+  },
+  
+  easing: "linear",
+})
+
+mainButtonAnime = anime({
+  targets: ".main-btn",
+  translateX: ["-1000px", "0px"],
+  duration: 500,
+  delay: 1000,
+  easing: "linear"
+})
+
