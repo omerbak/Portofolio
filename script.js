@@ -48,11 +48,11 @@ socialIconsAnime = anime({
   easing: "linear",
 })
 
-mainButtonAnime = anime({
+/* mainButtonAnime = anime({
   targets: ".main-btn",
   translateX: ["-1000px", "0px"],
   duration: 500,
   delay: 1000,
   easing: "linear"
-})
+}) */
 
