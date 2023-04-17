@@ -275,7 +275,7 @@ section{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    transform: translateX(-1000px);
+    /* transform: translateX(-1000px); */
 }
 .main-btn p{
     margin-right: 10px;
@@ -493,6 +493,9 @@ section{
 .project-info a:hover i{
     transform: scale(1.1);
     color: var(--main-color);
+}
+.project-info span{
+    text-align: center;
 }
 /****** Contact Section ******/
 .contact .container{
