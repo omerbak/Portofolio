@@ -4,6 +4,7 @@
   --primary-color: #865dff;
   --primary-color-opacity: rgb(134, 93, 255, 0.9);
   --bright-color: #f1eefb;
+  --bright-color-2: #d4d2df;
   --main-color: #865dff;
   --dark-color: #191825;
   --light-color: #f3f0ee;
@@ -100,7 +101,7 @@ header .container {
 .sidebar-title.scrolled {
   background-color: var(--primary-color);
 }
-.sidebar-title h1 {
+.sidebar-title p {
   color: white;
   font-weight: 500;
   font-size: 25px;
@@ -238,54 +239,65 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   background: url(./images/magicpattern2.png);
   /* background-color: var(--dark-color); */
   /* background: url(./images/background-vector.jpg) no-repeat; */
   background-size: cover;
   background-attachment: fixed;
   background-position: right bottom;
+  letter-spacing: 1.4px;
 }
-
+.main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .main h2 {
   color: var(--bright-color);
-  font-size: 1.4em;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 15px;
 }
-
-.main h2 span {
+.main h2 > strong {
+  font-size: 1.8rem;
+}
+.main h1 {
   display: inline-block;
-  margin-top: 10px;
   color: var(--main-color);
-  font-size: 2.8em;
-  font-weight: 600;
-}
-
-.main h3 {
-  color: var(--bright-color);
-  font-size: 2em;
+  font-size: 3rem;
   font-weight: 700;
-  letter-spacing: 1px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  letter-spacing: initial;
+  margin-bottom: 10px;
 }
 
+.main .container > p {
+  color: var(--bright-color);
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.hero-buttons {
+  margin-top: 60px;
+  display: flex;
+  gap: 25px;
+}
 .main-btn {
   color: #fff;
   background-color: var(--main-color);
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 600;
-  padding: 0.9375em 2.1875em;
+  padding: 1rem 2.5rem;
   letter-spacing: 1px;
   border-radius: 15px;
   margin-bottom: 40px;
   transition: 0.7s ease;
   display: flex;
-  width: fit-content;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: relative;
+
   /* transform: translateX(-1000px); */
 }
 .main-btn p {
@@ -312,11 +324,41 @@ section {
   color: var(--main-color);
   font-size: 2.2em;
   font-weight: 800;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
+/* Services Section */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.services-container .services-icons {
+  width: 35%;
+}
+.services-text {
+  width: 60%;
+  color: var(--bright-color);
+  max-width: 600px;
+}
+.services-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.services-text ol {
+  margin-left: 15px;
+}
+.services-text ol li {
+  color: var(--bright-color-2);
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.services-text ol li strong {
+  color: var(--bright-color);
+}
+/* End Services Section */
 .skills-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   gap: 25px;
 }
 .skill-card {
@@ -325,7 +367,7 @@ section {
   border-radius: 10px;
   transition: 0.7s ease;
   text-align: center;
-  padding: 5px;
+  padding: 5px 0;
   position: relative;
   overflow: hidden;
 }
@@ -334,8 +376,8 @@ section {
   place-items: center;
 }
 .skill-img {
-  height: 150px;
-  width: 100%;
+  height: 100px;
+  width: 100px;
   object-fit: contain;
   object-position: center;
   /* border: 1px solid red */
@@ -628,6 +670,16 @@ section {
   .main-content h3 {
     font-size: 1.6em;
   }
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-container .services-icons {
+    width: 60%;
+  }
+  .services-container .services-text {
+    width: 100%;
+  }
   /*   .content{
         flex-direction: column;
         align-items: center;
@@ -669,6 +721,9 @@ section {
   }
   .skills-content {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .services-container .services-icons {
+    width: 80%;
   }
   .projects-content {
     grid-template-columns: repeat(1, minmax(150px, 400px));
