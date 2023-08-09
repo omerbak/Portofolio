@@ -4,7 +4,7 @@ const sidebar = document.querySelector(".sidebar");
 const sidebarTitle = document.querySelector(".sidebar-title");
 const links = document.querySelectorAll(".links li");
 const body = document.querySelector("body");
-const sideBarTitle = document.querySelector(".sidebar-title");
+
 console.log(body);
 toggleBtn.addEventListener("click", function () {
   // if (sidebar.classList.contains("show-sidebar")) {
@@ -16,7 +16,8 @@ toggleBtn.addEventListener("click", function () {
   console.log("toggle-clicked");
   sidebar.classList.toggle("show-sidebar");
   body.classList.toggle("show-sidebar");
-  socialIconsAnime = anime({
+  sidebarTitle.classList.remove("scrolled");
+  /* socialIconsAnime = anime({
     targets: ".links li",
     translateX: [-500, 0],
     duration: 200,
@@ -25,7 +26,7 @@ toggleBtn.addEventListener("click", function () {
     },
     endDelay: 100,
     easing: "easeInOutElastic",
-  });
+  }); */
 });
 
 links.forEach((link) => {
@@ -37,7 +38,7 @@ links.forEach((link) => {
   });
 });
 
-socialIconsAnime = anime({
+/* socialIconsAnime = anime({
   targets: ".social-icons a",
   translateY: [-1000, 0],
   duration: 500,
@@ -46,7 +47,7 @@ socialIconsAnime = anime({
   },
 
   easing: "linear",
-});
+}); */
 
 /* mainButtonAnime = anime({
   targets: ".main-btn",
@@ -58,8 +59,10 @@ socialIconsAnime = anime({
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 85) {
-    sideBarTitle.classList.add("scrolled");
+    if (!body.classList.contains("show-sidebar")) {
+      sidebarTitle.classList.add("scrolled");
+    }
   } else {
-    sideBarTitle.classList.remove("scrolled");
+    sidebarTitle.classList.remove("scrolled");
   }
 });
