@@ -265,6 +265,7 @@ section {
   font-weight: 700;
   letter-spacing: initial;
   margin-bottom: 8px;
+  text-align: center;
 }
 .main .container > p {
   color: var(--bright-color);
@@ -293,6 +294,7 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
+  text-align: center;
 }
 .main-btn:hover {
   transform: scale(1.05);
@@ -308,11 +310,11 @@ section {
     font-size: 32px;
   }
   .main .container > p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .main-btn {
     font-size: 16px;
-    padding: 14px 34px;
+    padding: 10px 24px;
   }
 }
 
@@ -323,6 +325,7 @@ section {
   font-size: 36px;
   font-weight: 800;
   margin-bottom: 40px;
+  text-align: center;
 }
 @media (max-width: 660px) {
   .title {
@@ -335,17 +338,52 @@ section {
   justify-content: space-between;
   gap: 20px;
 }
+
 .services-container .services-icons {
-  width: 35%;
+  width: 100%;
+  max-width: 35%;
 }
 .services-text {
   width: 60%;
   color: var(--bright-color);
   max-width: 600px;
 }
+@media (max-width: 800px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .services-container .services-icons {
+    max-width: 60%;
+  }
+  .services-text {
+    width: 90%;
+    color: var(--bright-color);
+    max-width: 600px;
+  }
+}
 .services-text p {
-  font-size: 1.2rem;
+  font-size: 20px;
   margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .services-container .services-icons {
+    max-width: 60%;
+  }
+  .services-text {
+    width: 90%;
+    color: var(--bright-color);
+    max-width: 600px;
+  }
+  .services-text p {
+    font-size: 16px;
+  }
 }
 .services-text ol {
   margin-left: 15px;
@@ -361,8 +399,9 @@ section {
 /* End Services Section */
 .skills-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 150px));
   gap: 25px;
+  justify-content: center;
 }
 .skill-card {
   background-color: #2e293d;
@@ -377,15 +416,17 @@ section {
 .skill-card .icon {
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 .skill-img {
   height: 100px;
-  width: 100px;
+  max-width: 100%;
   object-fit: contain;
   object-position: center;
   /* border: 1px solid red */
-  padding: 15px 0;
+  padding: 16px;
 }
+
 .skill-card .skill-info {
   display: grid;
   place-content: center;
@@ -409,6 +450,15 @@ section {
   margin: 10px;
   opacity: 1;
 }
+@media (max-width: 660px) {
+  .skill-img {
+    height: 80px;
+    width: 80px;
+  }
+  .skill-info h3 {
+    font-size: 16px;
+  }
+}
 .skill-card:hover .skill-info h3 {
   animation-name: slideDown;
   animation-duration: 0.3s;
@@ -416,16 +466,6 @@ section {
   animation-timing-function: ease-out;
   animation-fill-mode: both;
 }
-
-/* .card{
-    background-color: #fff;
-    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
-    border-radius: 10px;
-    padding: 25px;
-    margin: 15px;
-    transition: 0.7s ease;
-    text-align: center;
-} */
 
 .card:hover {
   transform: scale(1.1);
@@ -436,11 +476,10 @@ section {
   font-size: 6em;
   text-align: center;
 }
-
+/* End services section */
+/****** Start Porject Section ******/
 .projects {
   background: url(./images/magicpattern2.png);
-  /* background-color: var(--dark-color); */
-  /* background: url(./images/background-vector.jpg) no-repeat; */
   background-size: cover;
   background-attachment: fixed;
   background-position: right bottom;
@@ -455,13 +494,18 @@ section {
   background-color: var(--card-bg);
   border-radius: 10px;
   min-height: 300px;
-  max-width: 700px;
+  max-width: 550px;
   overflow: hidden;
   margin: 20px;
   transition: 0.7s ease;
   position: relative;
 }
-
+@media (max-width: 1000px) {
+  .projects-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
 .project-card:hover .project-links * {
   animation-name: slideDown3;
   animation-duration: 0.3s;
@@ -485,6 +529,9 @@ section {
   width: 100%;
   height: 100%;
   object-position: top center;
+}
+.project-image img:first-child {
+  object-position: top left;
 }
 .project-card:hover .project-image image {
   object-fit: contain;
@@ -573,14 +620,13 @@ section {
   color: var(--bright-color);
 }
 /****** Contact Section ******/
-.contact .container {
-  /* border: 1px solid red; */
-}
+
 .contact .content .form-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
+
 .contact .content .form-field textarea {
   min-height: 250px;
   resize: none;
@@ -601,7 +647,15 @@ section {
   border-color: var(--main-color);
 }
 .contact .content .message-field {
-  grid-column: 1/3;
+  grid-column: span 2;
+}
+@media (max-width: 660px) {
+  .contact .content .form-container {
+    grid-template-columns: 1fr;
+  }
+  .contact .content .message-field {
+    grid-column: initial;
+  }
 }
 .submit-button {
   padding: 16px 38px;
