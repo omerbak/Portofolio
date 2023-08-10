@@ -21,8 +21,8 @@ body {
 .container {
   max-width: 1120px;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
   /* border: 1px solid red; */
@@ -336,7 +336,9 @@ section {
 .services-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
+  padding: 0 8px;
 }
 
 .services-container .services-icons {
@@ -390,13 +392,69 @@ section {
 }
 .services-text ol li {
   color: var(--bright-color-2);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: 300;
 }
 .services-text ol li strong {
   color: var(--bright-color);
 }
 /* End Services Section */
+
+/* *** Start Gigs section*/
+.gigs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--bright-color);
+  gap: 20px;
+  padding: 0 8px;
+}
+.gigs-text {
+  width: 60%;
+  color: var(--bright-color);
+  max-width: 600px;
+  font-size: 18px;
+}
+
+.gigs-text ul {
+  margin-left: 16px;
+}
+.gigs-text ul li {
+  margin-bottom: 16px;
+}
+.gigs-text ul li::marker {
+  color: var(--main-color);
+  font-size: 24px;
+}
+.gigs-illustration {
+  width: 100%;
+  max-width: 35%;
+}
+.gigs-illustration img {
+  max-width: 100%;
+}
+@media (max-width: 800px) {
+  .gigs-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .gigs-container .gigs-illustration {
+    max-width: 60%;
+    order: 1;
+  }
+  .gigs-text {
+    width: 90%;
+    order: 2;
+    font-size: 16px;
+  }
+  .gigs-text ul li {
+    margin-bottom: 12px;
+  }
+}
+/* *** End Gigs section*/
+
+/* *** Start Skills section */
 .skills-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 150px));
@@ -680,20 +738,32 @@ section {
   align-items: center;
   padding: 2em;
 }
-
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: start;
+    gap: 18px;
+    text-align: center;
+  }
+}
 .footer-title {
   font-size: 1.3em;
   font-weight: 600;
 }
-
+.footer-container a {
+  color: var(--accent2);
+  text-decoration: none;
+  font-size: 16px;
+}
 .footer-title span {
   color: var(--main-color);
 }
 
-.footer .social-icons a {
-  font-size: 1.3em;
-  padding: 0 13px 0 0;
-}
 /*** End Footer ***/
 /*** Scrollbar ***/
 
