@@ -1,293 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="this is the personal portfolio website of Omer Baktheer where I inculde iformation about me, my skills, my projects and my contact info">
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is the personal portfolio website of Omer Baktheer where I inculde iformation about me, my skills, my projects and my contact info"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+
+    <!-- Fav icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon_io/site.webmanifest" />
+    <!-- End Fav icon -->
     <!-- anime js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./script.js" defer></script>
     <title>Omer Baktheer</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="social-icons">
-        <a href="https://github.com/omerbak?tab=repositories"><i class="fi-xnsuxl-github"></i></a>
-        <a href="#"><i class="fi-cnsuxl-linkedin"></i></a>
-        <a href="#"><i class="fi-cnsuxl-twitter-solid"></i></a>
+      <a href="https://github.com/omerbak" target="_blank"
+        ><i class="fi-xnsuxl-github"></i
+      ></a>
+      <a href="www.linkedin.com/in/omer-baktheer" target="_blank"
+        ><i class="fi-cnsuxl-linkedin"></i
+      ></a>
+      <a href="#" target="_blank"><i class="fi-cnsuxl-twitter-solid"></i></a>
     </div>
-    <!-- <header>
-        <div class="container">
-            <a href="#" class="logo">Omer Baktheer</a>
-            <nav class="navigation">
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <button class="sidebar-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </header> -->
-    <!-- Sidebar -->
+
     <div class="sidebar-title">
-        <button class="sidebar-toggle">
-           <span class="span-one"></span>
-           <span class="span-one"></span>
-           <span class="span-one"></span>
-        </button>
-        <h1>Omer Baktheer</h1>
+      <button class="sidebar-toggle">
+        <span class="span-one"></span>
+        <span class="span-one"></span>
+        <span class="span-one"></span>
+      </button>
+      <p>Omer Baktheer</p>
     </div>
     <aside class="sidebar">
-        <!-- links -->
-        <ul class="links">
-          <li>
-            <a href="#main">Home</a>
-            <i class="fa-brands fa-twitter"></i>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact Me</a>
-          </li>
-        </ul>
-      </aside>
+      <!-- links -->
+      <ul class="links">
+        <li>
+          <a href="#main">Home</a>
+          <i class="fa-brands fa-twitter"></i>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Me</a>
+        </li>
+      </ul>
+    </aside>
     <!-- end Sidebar -->
 
     <section class="main" id="main">
-        <div class="container">
-            <h2>Hello I'm Omer<br><span>Web Developper</span></h2>
-            <h3>I'm passionate about web and creating great websites</h3>
-                <a href="#projects" class="main-btn">
-                   <p>View my work</p>
-                   <i class="fi-xnldxl-chevron arrow-icon"></i>
-                </a>
+      <div class="container">
+        <div class="profile-pic-container">
+          <img src="./images/profile-pic (3).png" alt="Omer profile pic" />
         </div>
+        <h2>Hello There, I'm <strong>Omer</strong></h2>
+        <h1>A Full Stack Web Developer</h1>
+        <p>
+          Let me help you imporve your online presence and reach your business
+          goals.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="main-btn">
+            <p>I Need A Site</p>
+            <!-- <i class="fi-xnldxl-chevron arrow-icon"></i> -->
+          </a>
+          <a href="#projects" class="main-btn">
+            <p>I Need A Dev</p>
+            <!--  <i class="fi-xnldxl-chevron arrow-icon"></i> -->
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2 class="title">Why Should You Hire Me</h2>
+        <div class="services-container">
+          <div class="services-icons">
+            <img src="./images/Business-growth-amico.svg" alt="" />
+          </div>
+          <div class="services-text">
+            <p>
+              In every work I do, I aim to provide clients with as much value as
+              possible. So, I always deliver completed projects that not only
+              met but exceeded my clients' initial vision - here is how I do
+              that:
+            </p>
+            <ol>
+              <li>
+                <strong>Consultation:</strong> We start with a conversation to
+                pinpoint what the project is all about and understand your needs
+                and desired outcomes.
+              </li>
+              <li>
+                <strong>Proposal:</strong> Once I have a good understanding of
+                your project, I will create a detailed proposal that outlines
+                the plan of action and costs.
+              </li>
+              <li>
+                <strong>Creation:</strong> During the creation process. I will
+                keep you updated on my progress and make sure you are happy with
+                the results at every stage.
+              </li>
+              <li>
+                <strong>Launch & Support:</strong> When your project is
+                completed, I will launch it and provide ongoing support. I will
+                be there to answer any questions or fix any problems that arise.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="cards skills" id="skills">
-        <div class="container">
-
-            <h2 class="title">Skills</h2>
-            <div class="skills-content">
-                <div class="skill-card">
-                    <div class="icon"><img class="skill-img" src="./images/html5.svg" alt="html"></div>
-                    <div class="skill-info">
-                        <h3>Html</h3>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="icon"><img class="skill-img" src="./images/css3.svg" alt="css"></div>
-                    <div class="skill-info">
-                        <h3>Css</h3>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="icon"><img class="skill-img" src="./images/javascript.svg"></div>
-                    <div class="skill-info">
-                        <h3>Javascript</h3>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="icon"><img class="skill-img" src="./images/git-icon.svg"></div>
-                    <div class="skill-info">
-                        <h3>Git And Github</h3>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="icon"><img class="skill-img" src="./images/reactjs.png" alt="React"></div>
-                    <div class="skill-info">
-                        <h3>React js</h3>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="icon"><img class="skill-img" src="./images/nextjs-icon.png" alt="Next js"></div>
-                    <div class="skill-info">
-                        <h3>Next js</h3>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="icon"><img class="skill-img" src="./images/sanity.webp" alt="Sanity cms"></div>
-                    <div class="skill-info">
-                        <h3>Sanity CMS</h3>
-                    </div>
-                </div>
-               
+      <div class="container">
+        <h2 class="title">Skills</h2>
+        <div class="skills-content">
+          <div class="skill-card">
+            <div class="icon">
+              <img class="skill-img" src="./images/html5.svg" alt="html" />
             </div>
+            <div class="skill-info">
+              <h3>Html</h3>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="icon">
+              <img class="skill-img" src="./images/css3.svg" alt="css" />
+            </div>
+            <div class="skill-info">
+              <h3>Css</h3>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="icon">
+              <img class="skill-img" src="./images/javascript.svg" />
+            </div>
+            <div class="skill-info">
+              <h3>Javascript</h3>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="icon">
+              <img class="skill-img" src="./images/git-icon.svg" />
+            </div>
+            <div class="skill-info">
+              <h3>Git And Github</h3>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="icon">
+              <img class="skill-img" src="./images/reactjs.png" alt="React" />
+            </div>
+            <div class="skill-info">
+              <h3>React js</h3>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="icon">
+              <img
+                class="skill-img"
+                src="./images/nextjs-icon.png"
+                alt="Next js"
+              />
+            </div>
+            <div class="skill-info">
+              <h3>Next js</h3>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="icon">
+              <img
+                class="skill-img"
+                src="./images/pngwing.com.png"
+                alt="Sanity cms"
+              />
+            </div>
+            <div class="skill-info">
+              <h3>Node Js, Express</h3>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="icon">
+              <img
+                class="skill-img"
+                src="./images/sanity.webp"
+                alt="Sanity cms"
+              />
+            </div>
+            <div class="skill-info">
+              <h3>Sanity CMS</h3>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="icon">
+              <img
+                class="skill-img"
+                src="./images/mongodb.png"
+                alt="Sanity cms"
+              />
+            </div>
+            <div class="skill-info">
+              <h3>MongoDB</h3>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- <section class="cards" id="services">
-        <h2 class="title">Services</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon"><i class="fa-brands fa-figma"></i></div>
-                <div class="info">
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, voluptas?</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="icon"><i class="fa-solid fa-code"></i></div>
-                <div class="info">
-                    <h3>Web Developper</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, voluptas?</p>
-                </div>
-            </div>
-
-
-        </div>
-
-    </section> -->
-
     <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="title">Projects</h2>
-            <div class="projects-content">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/projects/toDo.PNG" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Html, Css, Js</p>
-                        <strong class="project-title">
-                            <span>To Do App</span>
-                        </strong>
-                        <a href="https://omerbak.github.io/To_do_app/" target="_blank" class="more-details"><i class="fi-xnsuxl-eye-solid"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/projects/Meta_capstone_project.PNG" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">React, Formik, Css</p>
-                        <strong class="project-title">
-                            <span>Resturant website</span>
-                        </strong>
-                        <p class="project-category">Meta course, Final project</p>
-                        <a href="https://meta-capstone-vite.netlify.app" target="_blank" class="more-details"><i class="fi-xnsuxl-eye-solid"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/projects/abedulgader.PNG" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Next js, Sanity CMS, Css</p>
-                        <strong class="project-title">
-                            <span>Personal Researcher website</span>
-                        </strong>
-                        <a href="https://abedulgader-baktheer.vercel.app" target="_blank" class="more-details"><i class="fi-xnsuxl-eye-solid"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/projects/meals.PNG" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">ReactJs, Api</p>
-                        <strong class="project-title">
-                            <span>Meals App</span>
-                        </strong>
-                        <a href="https://mealsapp.obak.repl.co/?" target="_blank" class="more-details"><i class="fi-xnsuxl-eye-solid"></i></a>
-                    </div>
-                </div>
-    
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/projects/fetchGithub.PNG" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Html, Css, js, Api</p>
-                        <strong class="project-title">
-                            <span>Fetch Github Repos</span>
-                        </strong>
-                        <a href="https://omerbak.github.io/Fetch_github_user/" target="_blank" class="more-details"><i class="fi-xnsuxl-eye-solid"></i></a>
-                    </div>
-                </div>
-    
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/projects/localBusiness.PNG" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Html, Css</p>
-                        <strong class="project-title">
-                            <span>local busniess</span>
-                        </strong>
-                        <a href="https://omerbak.github.io/MetaCourseProject_luckyShrup/" target="_blank" class="more-details"><i class="fi-xnsuxl-eye-solid"></i></a>
-                    </div>
-                </div>
-    
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/projects/typingDash.PNG" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Html, Css, Js</p>
-                        <strong class="project-title">
-                            <span>Typing Game</span>
-                        </strong>
-                        <a href="https://omerbak.github.io/Typing_Dash/" target="_blank" class="more-details"><i class="fi-xnsuxl-eye-solid"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/projects/Calculator.PNG" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Html, Css, Js</p>
-                        <strong class="project-title">
-                            <span>Calculator</span>
-                        </strong>
-                        <a href="https://omerbak.github.io/simple_calculator/" target="_blank" class="more-details"><i class="fi-xnsuxl-eye-solid"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="title">Projects</h2>
+        <div class="projects-content">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/projects/dreamscape_ready.png" alt="" />
+              <div class="project-links">
+                <a
+                  href="https://dreamscape-travel-agency.netlify.app/"
+                  target="_blank"
+                  class="more-details"
+                >
+                  <i class="fi-xnsuxl-eye-solid"></i>
+                </a>
+              </div>
             </div>
+            <div class="project-desc">
+              <p class="project-title">Dreamscape</p>
+              <p class="project-info">
+                <strong>Next js, MongoDB, express js, tailwindcss</strong> -
+                it's a full stack travel agency website where users can search
+                for destinations fetched through a Rest-api.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/projects/clarity_ready.png" alt="" />
+              <div class="project-links">
+                <a
+                  href="https://omerbak.github.io/To_do_app/"
+                  target="_blank"
+                  class="more-details"
+                >
+                  <i class="fi-xnsuxl-eye-solid"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="project-title">Clarity List</p>
+              <p class="project-info">
+                <strong>Next js, Next Auth, MongoDB</strong> - it's a fullstack
+                to-do app where users can create their own accounts, add, check,
+                delete and modify their to-do list.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/projects/abedulgader_web (1).png" alt="" />
+              <div class="project-links">
+                <a
+                  href="https://abedulgader-baktheer.vercel.app/"
+                  target="_blank"
+                  class="more-details"
+                >
+                  <i class="fi-xnsuxl-eye-solid"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="project-title">Personal website</p>
+              <p class="project-info">
+                <strong>Next js, Sanity CMS, Css</strong> - Personal website for
+                an academic researcher where he can share his latest researches
+                and publications
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/projects/Meta_capstone_project.PNG" alt="" />
+              <div class="project-links">
+                <a
+                  href="https://meta-capstone-vite.netlify.app"
+                  target="_blank"
+                  class="more-details"
+                >
+                  <i class="fi-xnsuxl-eye-solid"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="project-title">The Little Lemon</p>
+              <p class="project-info">
+                <strong>React js, Css, Formik</strong> - it's a website for a
+                resturant where customer can see menu and make a reservation
+                throught a multistep form.
+              </p>
+            </div>
+          </div>
         </div>
+        <a
+          href="https://github.com/omerbak?tab=repositories"
+          target="_blank"
+          class="see-more"
+          >See more</a
+        >
+      </div>
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="title">Contact Me</h2>
-        <div class="container">
-            <div class="content">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="e74a0c89-c1d7-41ee-ba87-dfc3b0c29dba">
-                    <div class="form-container">
-                        <div class="form-field name-field">
-                            <input name="name" type="text" placeholder="Name" required>
-                        </div>
-                        <div class="form-field email-field">
-                            <input name="email" type="text" placeholder="Email" required>
-                        </div>
-                        <div class="form-field message-field">
-                            <textarea name="message" class="form-textarea" placeholder="Message" required></textarea>
-                        </div>
-                    </div>
-                    <button class="submit-button">Submit</button>
-                </form>
+      <h2 class="title">Contact Me</h2>
+      <div class="container">
+        <div class="content">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="e74a0c89-c1d7-41ee-ba87-dfc3b0c29dba"
+            />
+            <div class="form-container">
+              <div class="form-field name-field">
+                <input name="name" type="text" placeholder="Name" required />
+              </div>
+              <div class="form-field email-field">
+                <input name="email" type="text" placeholder="Email" required />
+              </div>
+              <div class="form-field message-field">
+                <textarea
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
             </div>
+            <button class="submit-button">Submit</button>
+          </form>
         </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <p class="footer-title">&copy; All Rights Reserved | <span>Omer Baktheer</span></p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-                <a href="https://github.com/omerbak?tab=repositories" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-            </div>
+      <div class="container">
+        <p class="footer-title">
+          &copy; All Rights Reserved | <span>Omer Baktheer</span>
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="https://github.com/omerbak?tab=repositories" target="_blank"
+            ><i class="fa-brands fa-github-square"></i
+          ></a>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
