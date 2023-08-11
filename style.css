@@ -18,7 +18,9 @@ body {
 /* body.show-sidebar section{
     transform: translateX(100px);
 } */
-.container {
+
+.container,
+.main-container {
   max-width: 1120px;
   width: 100%;
   padding-left: 16px;
@@ -26,6 +28,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   /* border: 1px solid red; */
+}
+.container {
   transition: all 1200ms;
   opacity: 0;
   transform: translateX(-200px);
@@ -232,7 +236,7 @@ section {
   background-attachment: fixed;
   background-position: right bottom;
 }
-.main .container {
+.main .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -278,7 +282,7 @@ section {
   margin-bottom: 8px;
   text-align: center;
 }
-.main .container > p {
+.main .main-container > p {
   color: var(--bright-color);
   font-size: 18px;
   font-weight: 300;
