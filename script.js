@@ -4,7 +4,8 @@ const sidebar = document.querySelector(".sidebar");
 const sidebarTitle = document.querySelector(".sidebar-title");
 const links = document.querySelectorAll(".links li");
 const body = document.querySelector("body");
-
+const main = document.querySelector(".main .container");
+const sections = document.querySelectorAll("section .container");
 console.log(body);
 toggleBtn.addEventListener("click", function () {
   // if (sidebar.classList.contains("show-sidebar")) {
@@ -17,7 +18,7 @@ toggleBtn.addEventListener("click", function () {
   sidebar.classList.toggle("show-sidebar");
   body.classList.toggle("show-sidebar");
   sidebarTitle.classList.remove("scrolled");
-  /* socialIconsAnime = anime({
+  socialIconsAnime = anime({
     targets: ".links li",
     translateX: [-500, 0],
     duration: 200,
@@ -26,7 +27,7 @@ toggleBtn.addEventListener("click", function () {
     },
     endDelay: 100,
     easing: "easeInOutElastic",
-  }); */
+  });
 });
 
 links.forEach((link) => {
@@ -38,24 +39,13 @@ links.forEach((link) => {
   });
 });
 
-/* socialIconsAnime = anime({
-  targets: ".social-icons a",
-  translateY: [-1000, 0],
-  duration: 500,
-  delay: function (el, i, l) {
-    return i * 500;
-  },
-
-  easing: "linear",
-}); */
-
 /* mainButtonAnime = anime({
   targets: ".main-btn",
   translateX: ["-1000px", "0px"],
   duration: 500,
   delay: 1000,
-  easing: "linear"
-}) */
+  easing: "linear",
+}); */
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 85) {
@@ -65,4 +55,31 @@ window.addEventListener("scroll", () => {
   } else {
     sidebarTitle.classList.remove("scrolled");
   }
+});
+
+socialIconsAnime = anime({
+  targets: ".social-icons a",
+  translateY: [-1000, 0],
+  duration: 300,
+  delay: function (el, i, l) {
+    return i * 300;
+  },
+
+  easing: "easeInOutElastic",
+});
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(
+    (entry) => {
+      entry.target.classList.toggle("container-appear", entry.isIntersecting);
+      if (entry.isIntersecting) sectionObserver.unobserve(entry.target);
+    },
+    {
+      treshold: 0.3,
+    }
+  );
+});
+
+sections.forEach((section) => {
+  sectionObserver.observe(section);
 });
