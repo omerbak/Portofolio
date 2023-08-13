@@ -310,7 +310,7 @@ section {
   align-items: center;
   position: relative;
   text-align: center;
-  gap: 12px;
+  gap: 12git px;
 }
 .main-btn:hover {
   transform: scale(1.05);
