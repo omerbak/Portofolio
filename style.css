@@ -307,13 +307,16 @@ section {
   transition: 0.3s ease;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   position: relative;
   text-align: center;
-  gap: 8px;
+  gap: 12px;
 }
 .main-btn:hover {
   transform: scale(1.05);
+}
+.main-btn i {
+  font-size: 16px;
 }
 /* .main-btn > i {
   transition: all 0.3s;
@@ -714,7 +717,9 @@ section {
   color: var(--bright-color);
 }
 /****** Contact Section ******/
-
+.contact .content form {
+  margin-bottom: 48px;
+}
 .contact .content .form-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -763,6 +768,31 @@ section {
 .submit-button:hover {
   color: var(--bright-color);
   transform: scale(1.1);
+}
+.contact .contact-divider {
+  display: block;
+  width: 75%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--bright-color);
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+.contact .contact-email {
+  text-align: center;
+  font-size: 24px;
+  color: var(--bright-color);
+}
+.contact .contact-email a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 700;
+}
+@media (max-width: 660px) {
+  .contact .contact-email {
+    font-size: 18px;
+  }
 }
 /*** End Contact Sectionn ***/
 
