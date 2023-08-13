@@ -20,6 +20,7 @@ body {
 } */
 
 .container,
+.footer-container,
 .main-container {
   max-width: 1120px;
   width: 100%;
@@ -799,10 +800,7 @@ section {
 /****** Footer  ******/
 .footer {
   color: var(--bright-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2em;
+  padding: 32px 0;
 }
 .footer-container {
   display: flex;
