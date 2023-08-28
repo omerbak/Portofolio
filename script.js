@@ -17,7 +17,13 @@ toggleBtn.addEventListener("click", function () {
   console.log("toggle-clicked");
   sidebar.classList.toggle("show-sidebar");
   body.classList.toggle("show-sidebar");
-  sidebarTitle.classList.remove("scrolled");
+  if (sidebarTitle.classList.contains("scrolled")) {
+    sidebarTitle.classList.remove("scrolled");
+  } else {
+    if (window.scrollY > 85) {
+      sidebarTitle.classList.add("scrolled");
+    }
+  }
   socialIconsAnime = anime({
     targets: ".links li",
     translateX: [-500, 0],
@@ -38,14 +44,6 @@ links.forEach((link) => {
     body.classList.toggle("show-sidebar");
   });
 });
-
-/* mainButtonAnime = anime({
-  targets: ".main-btn",
-  translateX: ["-1000px", "0px"],
-  duration: 500,
-  delay: 1000,
-  easing: "linear",
-}); */
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 85) {
