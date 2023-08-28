@@ -579,6 +579,9 @@ section {
   font-size: 6em;
   text-align: center;
 }
+ol li::marker {
+  color: #794ef7;
+}
 /* End services section */
 /****** Start Porject Section ******/
 
