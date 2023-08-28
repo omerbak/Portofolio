@@ -581,12 +581,7 @@ section {
 }
 /* End services section */
 /****** Start Porject Section ******/
-.projects {
-  background: url(./images/magicpattern2.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: right bottom;
-}
+
 .projects-content {
   display: grid;
   gap: 15px;
@@ -602,6 +597,8 @@ section {
   margin: 20px;
   transition: 0.7s ease;
   position: relative;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 @media (max-width: 1000px) {
   .projects-content {
@@ -649,11 +646,12 @@ section {
   margin-bottom: 8px;
   color: var(--bright-color);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.8px;
 }
 .project-info strong {
   color: var(--bright-color);
+  font-size: 16px;
 }
 
 .project-links {
@@ -723,6 +721,7 @@ section {
   color: var(--bright-color);
 }
 /****** Contact Section ******/
+
 .contact .content form {
   margin-bottom: 48px;
 }
@@ -805,7 +804,10 @@ section {
 /****** Footer  ******/
 .footer {
   color: var(--bright-color);
-  padding: 32px 0;
+  padding: 48px 0;
+  background: url(./images/magicpattern2.png);
+  background-attachment: fixed;
+  background-size: cover;
 }
 .footer-container {
   display: flex;
