@@ -6,13 +6,8 @@ const links = document.querySelectorAll(".links li");
 const body = document.querySelector("body");
 const main = document.querySelector(".main .container");
 const sections = document.querySelectorAll("section .container");
-console.log(body);
+
 toggleBtn.addEventListener("click", function () {
-  // if (sidebar.classList.contains("show-sidebar")) {
-  //   sidebar.classList.remove("show-sidebar");
-  // } else {
-  //   sidebar.classList.add("show-sidebar");
-  // }
   sidebarTitle.classList.toggle("active");
   console.log("toggle-clicked");
   sidebar.classList.toggle("show-sidebar");
