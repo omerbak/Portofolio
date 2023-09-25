@@ -236,11 +236,14 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: right bottom;
+  display: grid;
+  place-items: center;
 }
 .main .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-top: 28px;
   animation-name: appear;
   animation-duration: 1200ms;
@@ -269,7 +272,7 @@ section {
   color: var(--bright-color);
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .main h2 > strong {
   font-size: 28px;
@@ -277,11 +280,12 @@ section {
 .main h1 {
   display: inline-block;
   color: var(--main-color);
-  font-size: 40px;
+  font-size: 54px;
   font-weight: 700;
-  letter-spacing: initial;
-  margin-bottom: 8px;
+  letter-spacing: 1.4px;
+  margin-bottom: 32px;
   text-align: center;
+  line-height: 1;
 }
 .main .main-container > p {
   color: var(--bright-color);
@@ -292,7 +296,6 @@ section {
 }
 
 .hero-buttons {
-  margin-top: 48px;
   display: flex;
   gap: 32px;
 }
@@ -352,7 +355,7 @@ section {
     font-size: 24px;
   }
   .main h1 {
-    font-size: 32px;
+    font-size: 38px;
   }
   .main .container > p {
     font-size: 14px;
@@ -411,8 +414,8 @@ section {
   }
 }
 .services-text p {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 @media (max-width: 800px) {
   .services-container {

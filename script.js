@@ -55,17 +55,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-socialIconsAnime = anime({
-  targets: ".social-icons a",
-  translateY: [-1000, 0],
-  duration: 300,
-  delay: function (el, i, l) {
-    return i * 300;
-  },
-
-  easing: "easeInOutElastic",
-});
-
 const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach(
     (entry) => {
@@ -80,4 +69,15 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach((section) => {
   sectionObserver.observe(section);
+});
+
+socialIconsAnime = anime({
+  targets: ".social-icons a",
+  translateY: [-1000, 0],
+  duration: 300,
+  delay: function (el, i, l) {
+    return i * 300;
+  },
+
+  easing: "easeInOutElastic",
 });
